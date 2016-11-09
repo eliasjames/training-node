@@ -4,21 +4,21 @@ var myRadio = {
   radioStation: {
     playlist: [],
     startUp: function() {
-      if ( !myRadio.eventer.emit( 'start' )) {
-        myRadio.eventer.emit( 'getPlaylist' );
+      if ( !eventer.emit( 'start' )) {
+        return 'start failed - no listener';
       }
     }
   }
 };
 
-myRadio.eventer.on( 'start', function() {
+eventer.on( 'start', function() {
   console.log( 'started' );
-  if ( !myRadio.eventer.emit( 'getPlaylist' )) {
-    myRadio.eventer.once( 'getPlaylist', function() {
-      myRadio.radioStation.playlist.push( 'Naima', 'Spiritual', 'Harborview Hospital' );
-    });
-    return false;
-  }
+  eventer.emit( 'getPlaylist' );
 });
-
+eventer.once( 'getPlaylist', function() {
+  myRadio.radioStation.playlist.push( 'Naima', 'Spiritual', 'Harborview Hospital' );
+});
+eventer.on( 'error', function ( msg1, msg2 ) { 
+  console.log('ERROR - ' + msg1 + ' ' + msg2 ); 
+});
 module.exports = myRadio;
