@@ -11,8 +11,9 @@ fs.mkdir( dir, function( err ) {
   if ( err && err.code !== 'EEXIST' ) {
     console.log( err );
   } else {
-    fs.writeFile( opPath, 'start of file', function( err ) {
+    fs.writeFile( opPath, 'initial file text', function( err ) {
       if ( !err ) {
+        var cS = new CounterStream( 100 );
         var opWS = fs.createWriteStream( opPath );
         fs.watch( opPath, function( eventType, filename ) {
           if ( eventType === 'change' ) {
