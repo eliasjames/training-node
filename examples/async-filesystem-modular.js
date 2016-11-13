@@ -1,6 +1,5 @@
 var fs = require( 'fs' );
 var CounterStream = require( './streams-custom-readable.js' );
-var cS = new CounterStream( 100 );
 var dir = 'fs-examples';
 var opFile = 'output.txt';
 var opPath = dir + '/' + opFile;
@@ -18,6 +17,7 @@ function mkdirAndWrite( err ) {
 }
 function writeAndWatch( err ) {
   if ( !err ) {
+    var cS = new CounterStream( 100 );
     var opWS = fs.createWriteStream( opPath );
     fs.watch( opPath, function( eventType, filename ) {
       if ( eventType === 'change' ) {
