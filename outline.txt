@@ -1,36 +1,17 @@
-Introduction (1/4 day)
- - What is Node.js & JavaScript?
- - Using ES2015 and Babel
- - Development Tooling
+Day 1
+ - What is Node.js?
  - REPL Environment
-Node.js Package Manager (1/2 day)
- - Installing/Removing Packages
- - Local versus Global Packages
- - Linking/Unlinking Packages
- - Publishing Packages
- - Configuring NPM
-Node.js Building Blocks (3/4 day)
- - Events
- - Timers
+ - NPM
+ - Using Modules
+ - Built-in Modules
+   - FS
+   - HTTPServer
+ - Using a server library (Hapi/Express)
+ - Testing (Jasmine/Jest)
+Day 2
+ - Event loop
  - Processes
- - Buffers
- - Streams
- - File System
+ - Buffers, Streams, File System
  - Asynchronous Programming
-Data (1/2 day)
- - Reading/Writing Text Data
- - Reading/Writing Binary Data
- - SQL Databases – Oracle
- - No-SQL Databases – MongoDB
-Web, REST & GraphQL Services (3/4 day)
- - Express
- - Authentication
- - OAuth
- - Cookies
- - Sessions
- - GraphQL
-Unit Testing (1/4 day)
- - Unit Testing Framework - Intern.io
- - Assertions - Chai
- - Spies - Sinon
- - Code Coverage - Istanbul
+ - Debugging
+ - Error Handling
