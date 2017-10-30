@@ -1,0 +1,3 @@
+.load ./demo-timeout-vs-cycles.js
+start( 'timeouts' );
+

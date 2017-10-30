@@ -1,0 +1,10 @@
+var diceRoll = require( './random-number-generator.js' )( 6, 1 );
+var delayGenFactory = require( './delay-generator.js' );
+var myDelayGen = delayGenFactory();
+console.log( myDelayGen );
+var myRDG = function( callback ) {
+  myDelayGen.timeouts( callback, diceRoll() );
+};
+
+myRDG( function() { console.log( 'basic use' ); }, diceRoll() );
+myRDG( function( ms ) { console.log( 'enable print ms in delay-generator to see: ', ms ); }, diceRoll() );

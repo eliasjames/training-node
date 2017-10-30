@@ -1,0 +1,11 @@
+var myCounter = require( './basic-module-counter.js' );
+myCounter
+var ctrResult = myCounter();
+ctrResult
+ctrResult.getCounter();
+ctrResult.getCounter();
+ctrResult.getCounter();
+ctrResult.countOne();
+ctrResult.getCounter();
+ctrResult.getCounter();
+ctrResult.getCounter();

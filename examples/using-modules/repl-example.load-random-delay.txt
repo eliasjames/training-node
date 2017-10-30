@@ -1,0 +1,6 @@
+var myRandomDelayGen = require( './random-delay-generator.js' );
+var myRDG = myRandomDelayGen();
+myRDG.length
+var rdgResult = myRDG( function() { console.log( 'myRDG goes here' ) } );
+rdgResult
+rdgResult();
