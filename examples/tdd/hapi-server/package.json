@@ -1,0 +1,17 @@
+{
+  "name": "hapi-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hapi": "^16.6.2",
+    "jasmine": "^2.8.0",
+    "request": "^2.83.0"
+  }
+}
