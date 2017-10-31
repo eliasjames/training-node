@@ -12,8 +12,9 @@ describe( 'Hapi Server', function(){
   });
   it( 'should respond via http', function( done ){
 		server.start( function(){
+      var url = 'http://' + config.server.hostname + ':' + config.server.port; 
 			request.get( 
-				'http://' + config.server.hostname + ':' + config.server.port, 
+				url, 
 				function( err, resp, body ){
 					expect( err ).toBeNull();
 					expect( resp.statusCode ).toEqual( 200 );
@@ -22,6 +23,15 @@ describe( 'Hapi Server', function(){
 					done();
 				}
 			);
+			// use server.inject to test the same route
+			// without  making real http call
+//			server.inject( url, function( resp ){ 
+//				console.log( resp );
+//        expect( resp.statusCode ).toEqual( 200 );
+//        expect( resp.payload ).toEqual( config.server.defaultText );
+//        server.stop();
+//        done();
+//			});
 		});
 	});
 });
