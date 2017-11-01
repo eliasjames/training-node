@@ -15,6 +15,10 @@ module.exports = function() {
 		}
 	});
 
+  // test for this server method responding via http in spec/routes.spec.js
+  // test for myFS (inside handler) correctly writing file in fs.spec.js
+  // for both together - http method results in correct writing - 
+  // requires an integration test, next example
 	server.route({
 		method: 'GET',
 		path: '/write-a-file',
