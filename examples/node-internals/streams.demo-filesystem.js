@@ -1,5 +1,5 @@
 var fs = require( 'fs' );
-var CounterStream = require( './streams-custom-readable.js' );
+var CounterStream = require( './streams.custom-readable.js' );
 var cS = new CounterStream( 100 );
 var dir = 'fs-examples';
 var opFile = 'output.txt';
@@ -23,6 +23,7 @@ fs.mkdir( dir, function( err ) {
           }
         });
         cS.pipe( opWS );
+        console.log( 'CounterStream written' );
       } else {
         console.log( err );
       }

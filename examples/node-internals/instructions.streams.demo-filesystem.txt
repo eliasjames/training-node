@@ -1,0 +1,4 @@
+1. Pass script name as file arg to node. In this folder, run this command:
+  - 'node streams.demo-filesystem.js'
+2. Script will create a new dir ( 'fs-examples' ) in this folder
+3. Folder will contain two files: sequence number, and a copy
