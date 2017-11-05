@@ -1,5 +1,5 @@
 var fs = require( 'fs' );
-var CounterStream = require( './streams-custom-readable.js' );
+var CounterStream = require( './streams.custom-readable.js' );
 // npm install async for this to work
 var async = require('async');
 var dir = 'fs-examples';

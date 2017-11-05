@@ -1,5 +1,5 @@
 var fs = require( 'fs' );
-var CounterStream = require( './streams-custom-readable.js' );
+var CounterStream = require( './streams.custom-readable.js' );
 var dir = 'fs-examples';
 var opFile = 'output.txt';
 var opPath = dir + '/' + opFile;
