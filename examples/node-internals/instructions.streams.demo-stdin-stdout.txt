@@ -1,0 +1,5 @@
+1. Pass script name as file arg to node. In this folder, run this command:
+  - 'node streams.demo-stdin-stdout.js'
+2. Script will prompt you for name; enter any value
+3. Script will prompt you for an email in valid format ( simplest legal value: a@a )
+4. Script will repeat prompt until receiving valid value

@@ -1,0 +1,4 @@
+1. Pass script name as file arg to node. In this folder, run this command:
+  - 'node streams.demo-custom-transform.js'
+2. Console will wait for input; enter any text & press return
+3. Console will repeat input in ALL CAPS

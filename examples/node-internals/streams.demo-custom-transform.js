@@ -1,4 +1,4 @@
-var CustomTransform = require( './streams-transform' )();
+var CustomTransform = require( './streams.custom-transform' )();
 var cT = new CustomTransform();
 
 process.stdin

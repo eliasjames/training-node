@@ -1,0 +1,3 @@
+1. Pass script name as file arg to node. In this folder, run this command:
+  - 'node streams.demo-custom-readable.js'
+2. Readable will stream a sequence of increasing numbers; sequence piped to display
