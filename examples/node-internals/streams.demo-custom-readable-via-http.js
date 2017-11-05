@@ -1,5 +1,5 @@
 var http = require('http'), 
-  CustomReadable = require( './streams-custom-readable.js' ),
+  CustomReadable = require( './streams.custom-readable.js' ),
   fs = require('fs');
 
 var server = http.createServer(function (req, res) {
@@ -8,3 +8,4 @@ var server = http.createServer(function (req, res) {
   custRead.pipe( res );
 });
 server.listen(8000);
+console.log( 'Listening at http://localhost:8000/' );

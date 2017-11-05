@@ -1,0 +1,7 @@
+1. Pass script name as file arg to node. In this folder, run this command:
+  - 'node streams.demo-custom-readable-via-http.js'
+  - Console should read 'Listening at http://localhost:8000/'
+2. Open http://localhost:8000/ in browser
+  - sequence piped back via http
+  - increases on refresh
+3. Kill server process to end ( ctrl-c )
